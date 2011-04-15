@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6928F9071354BECC00C79007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6928F9061354BECC00C79007 /* Foundation.framework */; };
-		6928F90A1354BECC00C79007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6928F9091354BECC00C79007 /* main.m */; };
+		6928F9151354BF0A00C79007 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 6928F9141354BF0A00C79007 /* HelloWorld.m */; };
+		69CABEB8135890FF00AB2DB8 /* HelloCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEB7135890FF00AB2DB8 /* HelloCell.m */; };
+		69CABEBB135893FE00AB2DB8 /* HelloAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEBA135893FE00AB2DB8 /* HelloAction.m */; };
+		69CABEBE1358948A00AB2DB8 /* HelloController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEBD1358948A00AB2DB8 /* HelloController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,9 +29,16 @@
 /* Begin PBXFileReference section */
 		6928F9021354BECC00C79007 /* HelloWorldCUI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorldCUI; sourceTree = BUILT_PRODUCTS_DIR; };
 		6928F9061354BECC00C79007 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6928F9091354BECC00C79007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6928F90C1354BECC00C79007 /* HelloWorldCUI-Prefix.pch */ = {isa = PBXFileReference; path = "HelloWorldCUI-Prefix.pch"; sourceTree = "<group>"; };
+		6928F90C1354BECC00C79007 /* HelloWorldCUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorldCUI-Prefix.pch"; sourceTree = "<group>"; };
 		6928F90D1354BECC00C79007 /* HelloWorldCUI.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloWorldCUI.1; sourceTree = "<group>"; };
+		6928F9131354BF0A00C79007 /* HelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
+		6928F9141354BF0A00C79007 /* HelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
+		69CABEB6135890FF00AB2DB8 /* HelloCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloCell.h; sourceTree = "<group>"; };
+		69CABEB7135890FF00AB2DB8 /* HelloCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloCell.m; sourceTree = "<group>"; };
+		69CABEB9135893FE00AB2DB8 /* HelloAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloAction.h; sourceTree = "<group>"; };
+		69CABEBA135893FE00AB2DB8 /* HelloAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloAction.m; sourceTree = "<group>"; };
+		69CABEBC1358948A00AB2DB8 /* HelloController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloController.h; sourceTree = "<group>"; };
+		69CABEBD1358948A00AB2DB8 /* HelloController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +81,11 @@
 		6928F9081354BECC00C79007 /* HelloWorldCUI */ = {
 			isa = PBXGroup;
 			children = (
-				6928F9091354BECC00C79007 /* main.m */,
+				69CABEB4135890DA00AB2DB8 /* ExampleTargetAction */,
 				6928F90D1354BECC00C79007 /* HelloWorldCUI.1 */,
 				6928F90B1354BECC00C79007 /* Supporting Files */,
+				6928F9131354BF0A00C79007 /* HelloWorld.h */,
+				6928F9141354BF0A00C79007 /* HelloWorld.m */,
 			);
 			path = HelloWorldCUI;
 			sourceTree = "<group>";
@@ -84,6 +96,19 @@
 				6928F90C1354BECC00C79007 /* HelloWorldCUI-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69CABEB4135890DA00AB2DB8 /* ExampleTargetAction */ = {
+			isa = PBXGroup;
+			children = (
+				69CABEB6135890FF00AB2DB8 /* HelloCell.h */,
+				69CABEB7135890FF00AB2DB8 /* HelloCell.m */,
+				69CABEB9135893FE00AB2DB8 /* HelloAction.h */,
+				69CABEBA135893FE00AB2DB8 /* HelloAction.m */,
+				69CABEBC1358948A00AB2DB8 /* HelloController.h */,
+				69CABEBD1358948A00AB2DB8 /* HelloController.m */,
+			);
+			name = ExampleTargetAction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6928F90A1354BECC00C79007 /* main.m in Sources */,
+				6928F9151354BF0A00C79007 /* HelloWorld.m in Sources */,
+				69CABEB8135890FF00AB2DB8 /* HelloCell.m in Sources */,
+				69CABEBB135893FE00AB2DB8 /* HelloAction.m in Sources */,
+				69CABEBE1358948A00AB2DB8 /* HelloController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +248,7 @@
 				6928F9121354BECC00C79007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
