@@ -7,7 +7,7 @@
 //
 
 #import "HelloWorld.h"
-
+#import "HelloController.h"
 
 @implementation HelloWorld
 
@@ -18,8 +18,11 @@
 @end
 
 int main(int argc, char **argv){
-    id obj = [HelloWorld alloc];
-    [obj hello];
-    
+//    id obj = [HelloWorld alloc];
+//    [obj hello];
+
+    HelloController *con = [[HelloController alloc]init] ;
+    [con initController];
+    [con execEvent:@"hoge"];
     return 0;
 }
