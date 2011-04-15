@@ -15,5 +15,5 @@
 }
 
 - (void) initController;
-- (void) execEvent:(id)sender;
+- (void) execEvent;
 @end

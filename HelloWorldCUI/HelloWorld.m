@@ -23,6 +23,6 @@ int main(int argc, char **argv){
 
     HelloController *con = [[HelloController alloc]init] ;
     [con initController];
-    [con execEvent:@"hoge"];
+    [con execEvent];
     return 0;
 }

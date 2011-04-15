@@ -19,7 +19,7 @@
     [helloCell setAction:@selector(sayHello)];
 }
 
-- (void) execEvent:sender {
-    [helloCell performEvent:sender];
+- (void) execEvent {
+    [helloCell performEvent:helloCell];
 }
 @end
