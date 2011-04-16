@@ -10,6 +10,7 @@
 		6928F9071354BECC00C79007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6928F9061354BECC00C79007 /* Foundation.framework */; };
 		6928F9151354BF0A00C79007 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 6928F9141354BF0A00C79007 /* HelloWorld.m */; };
 		69850AC21359CD550081042B /* ExampleNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AC11359CD550081042B /* ExampleNSString.m */; };
+		69850ACF135A3F8C0081042B /* ExampleLocalCategory+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850ACE135A3F8C0081042B /* ExampleLocalCategory+Local.m */; };
 		69CABEB8135890FF00AB2DB8 /* HelloCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEB7135890FF00AB2DB8 /* HelloCell.m */; };
 		69CABEBB135893FE00AB2DB8 /* HelloAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEBA135893FE00AB2DB8 /* HelloAction.m */; };
 		69CABEBE1358948A00AB2DB8 /* HelloController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEBD1358948A00AB2DB8 /* HelloController.m */; };
@@ -35,6 +36,8 @@
 		6928F9141354BF0A00C79007 /* HelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
 		69850AC01359CD550081042B /* ExampleNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleNSString.h; sourceTree = "<group>"; };
 		69850AC11359CD550081042B /* ExampleNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleNSString.m; sourceTree = "<group>"; };
+		69850ACD135A3F8C0081042B /* ExampleLocalCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleLocalCategory.h; sourceTree = "<group>"; };
+		69850ACE135A3F8C0081042B /* ExampleLocalCategory+Local.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ExampleLocalCategory+Local.m"; sourceTree = "<group>"; };
 		69CABEB6135890FF00AB2DB8 /* HelloCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloCell.h; sourceTree = "<group>"; };
 		69CABEB7135890FF00AB2DB8 /* HelloCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloCell.m; sourceTree = "<group>"; };
 		69CABEB9135893FE00AB2DB8 /* HelloAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloAction.h; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		6928F9081354BECC00C79007 /* HelloWorldCUI */ = {
 			isa = PBXGroup;
 			children = (
+				69850ACB135A3F300081042B /* ExampleCategory */,
 				69850ABF1359CD1E0081042B /* ExampleString */,
 				6928F90B1354BECC00C79007 /* Supporting Files */,
 				6928F9131354BF0A00C79007 /* HelloWorld.h */,
@@ -107,6 +111,15 @@
 				69850AC11359CD550081042B /* ExampleNSString.m */,
 			);
 			name = ExampleString;
+			sourceTree = "<group>";
+		};
+		69850ACB135A3F300081042B /* ExampleCategory */ = {
+			isa = PBXGroup;
+			children = (
+				69850ACD135A3F8C0081042B /* ExampleLocalCategory.h */,
+				69850ACE135A3F8C0081042B /* ExampleLocalCategory+Local.m */,
+			);
+			name = ExampleCategory;
 			sourceTree = "<group>";
 		};
 		69CABEB4135890DA00AB2DB8 /* ExampleTargetAction */ = {
@@ -177,6 +190,7 @@
 				69CABEBB135893FE00AB2DB8 /* HelloAction.m in Sources */,
 				69CABEBE1358948A00AB2DB8 /* HelloController.m in Sources */,
 				69850AC21359CD550081042B /* ExampleNSString.m in Sources */,
+				69850ACF135A3F8C0081042B /* ExampleLocalCategory+Local.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

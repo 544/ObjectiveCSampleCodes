@@ -9,6 +9,7 @@
 #import "HelloWorld.h"
 #import "HelloController.h"
 #import "ExampleNSString.h"
+#import "ExampleLocalCategory.h"
 
 @implementation HelloWorld
 
@@ -26,8 +27,10 @@ int main(int argc, char **argv){
 //    [con initController];
 //    [con execEvent];
 
-    [[[ExampleNSString alloc] init] HelloNSString];
-    
+//    [[[ExampleNSString alloc] init] HelloNSString];
+
+    int a = [[[ExampleLocalCategory alloc] init] doSomething:10];
+    NSLog(@"%d",a);
     
     return 0;
 }
