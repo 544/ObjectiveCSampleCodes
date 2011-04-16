@@ -30,7 +30,6 @@
 		6928F9021354BECC00C79007 /* HelloWorldCUI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorldCUI; sourceTree = BUILT_PRODUCTS_DIR; };
 		6928F9061354BECC00C79007 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6928F90C1354BECC00C79007 /* HelloWorldCUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorldCUI-Prefix.pch"; sourceTree = "<group>"; };
-		6928F90D1354BECC00C79007 /* HelloWorldCUI.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloWorldCUI.1; sourceTree = "<group>"; };
 		6928F9131354BF0A00C79007 /* HelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
 		6928F9141354BF0A00C79007 /* HelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
 		69CABEB6135890FF00AB2DB8 /* HelloCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloCell.h; sourceTree = "<group>"; };
@@ -81,11 +80,10 @@
 		6928F9081354BECC00C79007 /* HelloWorldCUI */ = {
 			isa = PBXGroup;
 			children = (
-				69CABEB4135890DA00AB2DB8 /* ExampleTargetAction */,
-				6928F90D1354BECC00C79007 /* HelloWorldCUI.1 */,
 				6928F90B1354BECC00C79007 /* Supporting Files */,
 				6928F9131354BF0A00C79007 /* HelloWorld.h */,
 				6928F9141354BF0A00C79007 /* HelloWorld.m */,
+				69CABEB4135890DA00AB2DB8 /* ExampleTargetAction */,
 			);
 			path = HelloWorldCUI;
 			sourceTree = "<group>";
