@@ -45,7 +45,8 @@
     NSLog(@"hasPrefixで比較 %@ isStrartwith %@ ... %d" , cmpStr1, cmpStr2, cmpResult4);
     
     
-    
+//    BOOL cmpResult5 = [cmpStr1 localizedStandardCompare:cmpStr2];
+  //???  
 
     
     NSLog(@" ---- NSString Example End ---- ");
