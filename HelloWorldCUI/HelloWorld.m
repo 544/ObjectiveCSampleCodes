@@ -8,6 +8,7 @@
 
 #import "HelloWorld.h"
 #import "HelloController.h"
+#import "ExampleNSString.h"
 
 @implementation HelloWorld
 
@@ -21,8 +22,12 @@ int main(int argc, char **argv){
 //    id obj = [HelloWorld alloc];
 //    [obj hello];
 
-    HelloController *con = [[HelloController alloc]init] ;
-    [con initController];
-    [con execEvent];
+//    HelloController *con = [[HelloController alloc]init] ;
+//    [con initController];
+//    [con execEvent];
+
+    [[[ExampleNSString alloc] init] HelloNSString];
+    
+    
     return 0;
 }
