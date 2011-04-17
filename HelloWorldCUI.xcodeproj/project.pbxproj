@@ -14,6 +14,8 @@
 		69850ADA135B52CD0081042B /* NSString+PathComp.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AD9135B52CD0081042B /* NSString+PathComp.m */; };
 		69850ADF135B560B0081042B /* TestPathComp.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850ADE135B560B0081042B /* TestPathComp.m */; };
 		69850AE2135B5E370081042B /* ExampleVaList.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AE1135B5E370081042B /* ExampleVaList.m */; };
+		69850AE5135B61230081042B /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AE4135B61230081042B /* NSArray+Random.m */; };
+		69850AE8135B633D0081042B /* TestNSArrayRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AE7135B633D0081042B /* TestNSArrayRandom.m */; };
 		69CABEB8135890FF00AB2DB8 /* HelloCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEB7135890FF00AB2DB8 /* HelloCell.m */; };
 		69CABEBB135893FE00AB2DB8 /* HelloAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEBA135893FE00AB2DB8 /* HelloAction.m */; };
 		69CABEBE1358948A00AB2DB8 /* HelloController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEBD1358948A00AB2DB8 /* HelloController.m */; };
@@ -46,6 +48,10 @@
 		69850ADD135B560B0081042B /* TestPathComp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPathComp.h; sourceTree = "<group>"; };
 		69850ADE135B560B0081042B /* TestPathComp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPathComp.m; sourceTree = "<group>"; };
 		69850AE1135B5E370081042B /* ExampleVaList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleVaList.m; sourceTree = "<group>"; };
+		69850AE3135B61220081042B /* NSArray+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Random.h"; sourceTree = "<group>"; };
+		69850AE4135B61230081042B /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
+		69850AE6135B633D0081042B /* TestNSArrayRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNSArrayRandom.h; sourceTree = "<group>"; };
+		69850AE7135B633D0081042B /* TestNSArrayRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNSArrayRandom.m; sourceTree = "<group>"; };
 		69CABEB6135890FF00AB2DB8 /* HelloCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloCell.h; sourceTree = "<group>"; };
 		69CABEB7135890FF00AB2DB8 /* HelloCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloCell.m; sourceTree = "<group>"; };
 		69CABEB9135893FE00AB2DB8 /* HelloAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloAction.h; sourceTree = "<group>"; };
@@ -131,6 +137,10 @@
 				69850AD9135B52CD0081042B /* NSString+PathComp.m */,
 				69850ADD135B560B0081042B /* TestPathComp.h */,
 				69850ADE135B560B0081042B /* TestPathComp.m */,
+				69850AE3135B61220081042B /* NSArray+Random.h */,
+				69850AE4135B61230081042B /* NSArray+Random.m */,
+				69850AE6135B633D0081042B /* TestNSArrayRandom.h */,
+				69850AE7135B633D0081042B /* TestNSArrayRandom.m */,
 			);
 			name = ExampleCategory;
 			sourceTree = "<group>";
@@ -207,6 +217,8 @@
 				69850ADA135B52CD0081042B /* NSString+PathComp.m in Sources */,
 				69850ADF135B560B0081042B /* TestPathComp.m in Sources */,
 				69850AE2135B5E370081042B /* ExampleVaList.m in Sources */,
+				69850AE5135B61230081042B /* NSArray+Random.m in Sources */,
+				69850AE8135B633D0081042B /* TestNSArrayRandom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

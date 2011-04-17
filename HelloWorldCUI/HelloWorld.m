@@ -12,6 +12,7 @@
 #import "ExampleLocalCategory.h"
 
 #import "TestPathComp.h"
+#import "TestNSArrayRandom.h"
 
 @implementation HelloWorld
 
@@ -34,7 +35,9 @@ int main(int argc, char **argv){
 //    int a = [[[ExampleLocalCategory alloc] init] doSomething:10];
 //    NSLog(@"%d",a);
 
-    [[[TestPathComp alloc] init] execTest];
+//    [[[TestPathComp alloc] init] execTest];
+    
+    [[[TestNSArrayRandom alloc] init] execTest];
     
     return 0;
 }
