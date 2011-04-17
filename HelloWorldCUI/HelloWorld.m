@@ -11,6 +11,8 @@
 #import "ExampleNSString.h"
 #import "ExampleLocalCategory.h"
 
+#import "TestPathComp.h"
+
 @implementation HelloWorld
 
 - (void) hello{
@@ -29,8 +31,10 @@ int main(int argc, char **argv){
 
 //    [[[ExampleNSString alloc] init] HelloNSString];
 
-    int a = [[[ExampleLocalCategory alloc] init] doSomething:10];
-    NSLog(@"%d",a);
+//    int a = [[[ExampleLocalCategory alloc] init] doSomething:10];
+//    NSLog(@"%d",a);
+
+    [[[TestPathComp alloc] init] execTest];
     
     return 0;
 }
