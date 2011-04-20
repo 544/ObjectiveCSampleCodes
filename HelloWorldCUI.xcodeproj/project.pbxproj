@@ -16,6 +16,8 @@
 		69850AE2135B5E370081042B /* ExampleVaList.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AE1135B5E370081042B /* ExampleVaList.m */; };
 		69850AE5135B61230081042B /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AE4135B61230081042B /* NSArray+Random.m */; };
 		69850AE8135B633D0081042B /* TestNSArrayRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AE7135B633D0081042B /* TestNSArrayRandom.m */; };
+		69A480A3135F44D300AC460D /* Figure.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A480A2135F44D300AC460D /* Figure.m */; };
+		69A480A6135F4C8000AC460D /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A480A5135F4C8000AC460D /* Circle.m */; };
 		69CABEB8135890FF00AB2DB8 /* HelloCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEB7135890FF00AB2DB8 /* HelloCell.m */; };
 		69CABEBB135893FE00AB2DB8 /* HelloAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEBA135893FE00AB2DB8 /* HelloAction.m */; };
 		69CABEBE1358948A00AB2DB8 /* HelloController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEBD1358948A00AB2DB8 /* HelloController.m */; };
@@ -52,6 +54,10 @@
 		69850AE4135B61230081042B /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
 		69850AE6135B633D0081042B /* TestNSArrayRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNSArrayRandom.h; sourceTree = "<group>"; };
 		69850AE7135B633D0081042B /* TestNSArrayRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNSArrayRandom.m; sourceTree = "<group>"; };
+		69A480A1135F44D300AC460D /* Figure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Figure.h; sourceTree = "<group>"; };
+		69A480A2135F44D300AC460D /* Figure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Figure.m; sourceTree = "<group>"; };
+		69A480A4135F4C8000AC460D /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		69A480A5135F4C8000AC460D /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 		69CABEB6135890FF00AB2DB8 /* HelloCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloCell.h; sourceTree = "<group>"; };
 		69CABEB7135890FF00AB2DB8 /* HelloCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloCell.m; sourceTree = "<group>"; };
 		69CABEB9135893FE00AB2DB8 /* HelloAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloAction.h; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 		6928F9081354BECC00C79007 /* HelloWorldCUI */ = {
 			isa = PBXGroup;
 			children = (
+				69A4809F135F44AF00AC460D /* ExampleAbstract */,
 				69850ACB135A3F300081042B /* ExampleCategory */,
 				69850ABF1359CD1E0081042B /* ExampleFoundation */,
 				6928F90B1354BECC00C79007 /* Supporting Files */,
@@ -143,6 +150,17 @@
 				69850AE7135B633D0081042B /* TestNSArrayRandom.m */,
 			);
 			name = ExampleCategory;
+			sourceTree = "<group>";
+		};
+		69A4809F135F44AF00AC460D /* ExampleAbstract */ = {
+			isa = PBXGroup;
+			children = (
+				69A480A1135F44D300AC460D /* Figure.h */,
+				69A480A2135F44D300AC460D /* Figure.m */,
+				69A480A4135F4C8000AC460D /* Circle.h */,
+				69A480A5135F4C8000AC460D /* Circle.m */,
+			);
+			name = ExampleAbstract;
 			sourceTree = "<group>";
 		};
 		69CABEB4135890DA00AB2DB8 /* ExampleTargetAction */ = {
@@ -219,6 +237,8 @@
 				69850AE2135B5E370081042B /* ExampleVaList.m in Sources */,
 				69850AE5135B61230081042B /* NSArray+Random.m in Sources */,
 				69850AE8135B633D0081042B /* TestNSArrayRandom.m in Sources */,
+				69A480A3135F44D300AC460D /* Figure.m in Sources */,
+				69A480A6135F4C8000AC460D /* Circle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
