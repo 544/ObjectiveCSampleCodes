@@ -13,6 +13,7 @@
 
 #import "TestPathComp.h"
 #import "TestNSArrayRandom.h"
+#import "CheckClassCluster.h"
 
 @implementation HelloWorld
 
@@ -37,7 +38,9 @@ int main(int argc, char **argv){
 
 //    [[[TestPathComp alloc] init] execTest];
     
-    [[[TestNSArrayRandom alloc] init] execTest];
+//    [[[TestNSArrayRandom alloc] init] execTest];
+    
+    [[[CheckClassCluster alloc] init] check];
     
     return 0;
 }
