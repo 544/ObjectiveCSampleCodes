@@ -13,6 +13,9 @@
 
 @implementation TestProtocol
 - (void) doit{
+    
+    id pool = [[NSAutoreleasePool alloc] init];
+    
     NSMutableArray * array = [[NSMutableArray alloc] init];
     
     [array addRealNumber:@"1.3"];
@@ -61,7 +64,7 @@
 		NSLog(@">> %@", e);
 	}
 
-
-
+    [pool drain];
+    // リファレンスカウンタだとdrain,GCだとrelease ...?
 }
 @end
