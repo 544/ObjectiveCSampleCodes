@@ -16,6 +16,7 @@
 #import "CheckClassCluster.h"
 #import "TestProtocol.h"
 #import "TestExamProp.h"
+#import "Testblock1.h"
 
 @implementation HelloWorld
 
@@ -48,7 +49,10 @@ int main(int argc, char **argv){
   
 //    [[[TestProtocol alloc] init] doit];
     
-    [[[TestExamProp alloc] init] doit];
+//    [[[TestExamProp alloc] init] doit];
+    
+    [[[Testblock1 alloc] init] doIt];
+    
     
     [pool drain];
     return 0;
