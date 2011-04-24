@@ -14,6 +14,7 @@
 #import "TestPathComp.h"
 #import "TestNSArrayRandom.h"
 #import "CheckClassCluster.h"
+#import "TestProtocol.h"
 
 @implementation HelloWorld
 
@@ -40,7 +41,9 @@ int main(int argc, char **argv){
     
 //    [[[TestNSArrayRandom alloc] init] execTest];
     
-    [[[CheckClassCluster alloc] init] check];
+//    [[[CheckClassCluster alloc] init] check];
+  
+    [[[TestProtocol alloc] init] doit];
     
     return 0;
 }

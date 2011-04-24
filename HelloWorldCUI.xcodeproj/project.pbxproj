@@ -16,6 +16,9 @@
 		69850AE2135B5E370081042B /* ExampleVaList.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AE1135B5E370081042B /* ExampleVaList.m */; };
 		69850AE5135B61230081042B /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AE4135B61230081042B /* NSArray+Random.m */; };
 		69850AE8135B633D0081042B /* TestNSArrayRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AE7135B633D0081042B /* TestNSArrayRandom.m */; };
+		698529F913640AD40099C329 /* RealArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 698529F813640AD40099C329 /* RealArray.m */; };
+		698529FC13640C8F0099C329 /* TestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 698529FB13640C8F0099C329 /* TestProtocol.m */; };
+		69852A00136410CC0099C329 /* RealString.m in Sources */ = {isa = PBXBuildFile; fileRef = 698529FF136410CC0099C329 /* RealString.m */; };
 		69A480A3135F44D300AC460D /* Figure.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A480A2135F44D300AC460D /* Figure.m */; };
 		69A480A6135F4C8000AC460D /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A480A5135F4C8000AC460D /* Circle.m */; };
 		69A480A9135F546F00AC460D /* CheckClassCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A480A8135F546E00AC460D /* CheckClassCluster.m */; };
@@ -55,6 +58,13 @@
 		69850AE4135B61230081042B /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
 		69850AE6135B633D0081042B /* TestNSArrayRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNSArrayRandom.h; sourceTree = "<group>"; };
 		69850AE7135B633D0081042B /* TestNSArrayRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNSArrayRandom.m; sourceTree = "<group>"; };
+		698529F613640A7A0099C329 /* RealNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealNumber.h; sourceTree = "<group>"; };
+		698529F713640AD40099C329 /* RealArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealArray.h; sourceTree = "<group>"; };
+		698529F813640AD40099C329 /* RealArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealArray.m; sourceTree = "<group>"; };
+		698529FA13640C8F0099C329 /* TestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
+		698529FB13640C8F0099C329 /* TestProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProtocol.m; sourceTree = "<group>"; };
+		698529FE136410CC0099C329 /* RealString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealString.h; sourceTree = "<group>"; };
+		698529FF136410CC0099C329 /* RealString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealString.m; sourceTree = "<group>"; };
 		69A480A1135F44D300AC460D /* Figure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Figure.h; sourceTree = "<group>"; };
 		69A480A2135F44D300AC460D /* Figure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Figure.m; sourceTree = "<group>"; };
 		69A480A4135F4C8000AC460D /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
@@ -109,6 +119,7 @@
 		6928F9081354BECC00C79007 /* HelloWorldCUI */ = {
 			isa = PBXGroup;
 			children = (
+				698529F413640A210099C329 /* ExampleProtocol */,
 				69A4809F135F44AF00AC460D /* ExampleAbstract */,
 				69850ACB135A3F300081042B /* ExampleCategory */,
 				69850ABF1359CD1E0081042B /* ExampleFoundation */,
@@ -153,6 +164,20 @@
 				69850AE7135B633D0081042B /* TestNSArrayRandom.m */,
 			);
 			name = ExampleCategory;
+			sourceTree = "<group>";
+		};
+		698529F413640A210099C329 /* ExampleProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				698529F613640A7A0099C329 /* RealNumber.h */,
+				698529F713640AD40099C329 /* RealArray.h */,
+				698529F813640AD40099C329 /* RealArray.m */,
+				698529FA13640C8F0099C329 /* TestProtocol.h */,
+				698529FB13640C8F0099C329 /* TestProtocol.m */,
+				698529FE136410CC0099C329 /* RealString.h */,
+				698529FF136410CC0099C329 /* RealString.m */,
+			);
+			name = ExampleProtocol;
 			sourceTree = "<group>";
 		};
 		69A4809F135F44AF00AC460D /* ExampleAbstract */ = {
@@ -245,6 +270,9 @@
 				69A480A3135F44D300AC460D /* Figure.m in Sources */,
 				69A480A6135F4C8000AC460D /* Circle.m in Sources */,
 				69A480A9135F546F00AC460D /* CheckClassCluster.m in Sources */,
+				698529F913640AD40099C329 /* RealArray.m in Sources */,
+				698529FC13640C8F0099C329 /* TestProtocol.m in Sources */,
+				69852A00136410CC0099C329 /* RealString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
