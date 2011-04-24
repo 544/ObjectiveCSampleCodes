@@ -18,12 +18,21 @@
     [array addRealNumber:@"1.3"];
     [array addRealNumber:@"2"];
     [array addRealNumber:@"0.2"];
-
-    if ([array conformsToProtocol:@protocol(RealNumber)]) {
-        NSLog(@"isRealNumberProtocol");
+    
+    // NSMutableArrayの中身がすべてプロトコルを満たしているか判断
+    BOOL boolean = NO;
+    for (id e in array) {
+        if ([e conformsToProtocol:@protocol(RealNumber)]) {
+            boolean = YES;
+        }
+    }
+    
+    if (boolean) {
+        NSLog(@"ArraysMember is RealNumberProtocol");
         [array sort];
-    } else
-        NSLog(@"isNotRealNumberProtocol");
+    } else{
+        NSLog(@"ArraysMember is not RealNumberProtocol");
+    }
     
     for (id e in array) {
 		NSLog(@">> %@", e);

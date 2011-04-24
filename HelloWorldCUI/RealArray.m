@@ -9,7 +9,7 @@
 #import "RealArray.h"
 
 
-@implementation NSMutableArray (RealArray)
+@implementation NSMutableArray (RealArray) 
 - (void)addRealNumber:(id<RealNumber>) number{
     [self addObject:number];
 }
