@@ -15,6 +15,7 @@
 #import "TestNSArrayRandom.h"
 #import "CheckClassCluster.h"
 #import "TestProtocol.h"
+#import "TestExamProp.h"
 
 @implementation HelloWorld
 
@@ -25,6 +26,8 @@
 @end
 
 int main(int argc, char **argv){
+    
+    id pool = [[NSAutoreleasePool alloc] init];
 //    id obj = [HelloWorld alloc];
 //    [obj hello];
 
@@ -43,7 +46,10 @@ int main(int argc, char **argv){
     
 //    [[[CheckClassCluster alloc] init] check];
   
-    [[[TestProtocol alloc] init] doit];
+//    [[[TestProtocol alloc] init] doit];
     
+    [[[TestExamProp alloc] init] doit];
+    
+    [pool drain];
     return 0;
 }

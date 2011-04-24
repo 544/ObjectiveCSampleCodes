@@ -19,6 +19,8 @@
 		698529F913640AD40099C329 /* RealArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 698529F813640AD40099C329 /* RealArray.m */; };
 		698529FC13640C8F0099C329 /* TestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 698529FB13640C8F0099C329 /* TestProtocol.m */; };
 		69852A00136410CC0099C329 /* RealString.m in Sources */ = {isa = PBXBuildFile; fileRef = 698529FF136410CC0099C329 /* RealString.m */; };
+		69852A0413644AF00099C329 /* ExampleBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 69852A0313644AF00099C329 /* ExampleBean.m */; };
+		69852A0713644B9E0099C329 /* TestExamProp.m in Sources */ = {isa = PBXBuildFile; fileRef = 69852A0613644B9E0099C329 /* TestExamProp.m */; };
 		69A480A3135F44D300AC460D /* Figure.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A480A2135F44D300AC460D /* Figure.m */; };
 		69A480A6135F4C8000AC460D /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A480A5135F4C8000AC460D /* Circle.m */; };
 		69A480A9135F546F00AC460D /* CheckClassCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A480A8135F546E00AC460D /* CheckClassCluster.m */; };
@@ -65,6 +67,10 @@
 		698529FB13640C8F0099C329 /* TestProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProtocol.m; sourceTree = "<group>"; };
 		698529FE136410CC0099C329 /* RealString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealString.h; sourceTree = "<group>"; };
 		698529FF136410CC0099C329 /* RealString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealString.m; sourceTree = "<group>"; };
+		69852A0213644AF00099C329 /* ExampleBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleBean.h; sourceTree = "<group>"; };
+		69852A0313644AF00099C329 /* ExampleBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleBean.m; sourceTree = "<group>"; };
+		69852A0513644B9E0099C329 /* TestExamProp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestExamProp.h; sourceTree = "<group>"; };
+		69852A0613644B9E0099C329 /* TestExamProp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestExamProp.m; sourceTree = "<group>"; };
 		69A480A1135F44D300AC460D /* Figure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Figure.h; sourceTree = "<group>"; };
 		69A480A2135F44D300AC460D /* Figure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Figure.m; sourceTree = "<group>"; };
 		69A480A4135F4C8000AC460D /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 		6928F9081354BECC00C79007 /* HelloWorldCUI */ = {
 			isa = PBXGroup;
 			children = (
+				69852A0113644A520099C329 /* ExampleProperty */,
 				698529F413640A210099C329 /* ExampleProtocol */,
 				69A4809F135F44AF00AC460D /* ExampleAbstract */,
 				69850ACB135A3F300081042B /* ExampleCategory */,
@@ -178,6 +185,17 @@
 				698529FF136410CC0099C329 /* RealString.m */,
 			);
 			name = ExampleProtocol;
+			sourceTree = "<group>";
+		};
+		69852A0113644A520099C329 /* ExampleProperty */ = {
+			isa = PBXGroup;
+			children = (
+				69852A0213644AF00099C329 /* ExampleBean.h */,
+				69852A0313644AF00099C329 /* ExampleBean.m */,
+				69852A0513644B9E0099C329 /* TestExamProp.h */,
+				69852A0613644B9E0099C329 /* TestExamProp.m */,
+			);
+			name = ExampleProperty;
 			sourceTree = "<group>";
 		};
 		69A4809F135F44AF00AC460D /* ExampleAbstract */ = {
@@ -273,6 +291,8 @@
 				698529F913640AD40099C329 /* RealArray.m in Sources */,
 				698529FC13640C8F0099C329 /* TestProtocol.m in Sources */,
 				69852A00136410CC0099C329 /* RealString.m in Sources */,
+				69852A0413644AF00099C329 /* ExampleBean.m in Sources */,
+				69852A0713644B9E0099C329 /* TestExamProp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
