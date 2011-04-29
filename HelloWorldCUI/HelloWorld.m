@@ -17,6 +17,7 @@
 #import "TestProtocol.h"
 #import "TestExamProp.h"
 #import "Testblock1.h"
+#import "TestReversibleString.h"
 
 @implementation HelloWorld
 
@@ -51,8 +52,9 @@ int main(int argc, char **argv){
     
 //    [[[TestExamProp alloc] init] doit];
     
-    [[[Testblock1 alloc] init] doIt];
+//    [[[Testblock1 alloc] init] doIt];
     
+    [[[TestReversibleString alloc] init] doit];
     
     [pool drain];
     return 0;

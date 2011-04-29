@@ -28,6 +28,8 @@
 		69CABEB8135890FF00AB2DB8 /* HelloCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEB7135890FF00AB2DB8 /* HelloCell.m */; };
 		69CABEBB135893FE00AB2DB8 /* HelloAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEBA135893FE00AB2DB8 /* HelloAction.m */; };
 		69CABEBE1358948A00AB2DB8 /* HelloController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CABEBD1358948A00AB2DB8 /* HelloController.m */; };
+		69FF38EF136A501000DD8500 /* ReversibleString.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FF38EE136A501000DD8500 /* ReversibleString.m */; };
+		69FF38F2136A566600DD8500 /* TestReversibleString.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FF38F1136A566600DD8500 /* TestReversibleString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +88,10 @@
 		69CABEBA135893FE00AB2DB8 /* HelloAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloAction.m; sourceTree = "<group>"; };
 		69CABEBC1358948A00AB2DB8 /* HelloController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloController.h; sourceTree = "<group>"; };
 		69CABEBD1358948A00AB2DB8 /* HelloController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloController.m; sourceTree = "<group>"; };
+		69FF38ED136A501000DD8500 /* ReversibleString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReversibleString.h; sourceTree = "<group>"; };
+		69FF38EE136A501000DD8500 /* ReversibleString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReversibleString.m; sourceTree = "<group>"; };
+		69FF38F0136A566600DD8500 /* TestReversibleString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestReversibleString.h; sourceTree = "<group>"; };
+		69FF38F1136A566600DD8500 /* TestReversibleString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestReversibleString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 		6928F9081354BECC00C79007 /* HelloWorldCUI */ = {
 			isa = PBXGroup;
 			children = (
+				69FF38EB136A4FEA00DD8500 /* ExampleMessage */,
 				69852A081364557D0099C329 /* ExampleBlock */,
 				69852A0113644A520099C329 /* ExampleProperty */,
 				698529F413640A210099C329 /* ExampleProtocol */,
@@ -237,6 +244,17 @@
 			name = ExampleTargetAction;
 			sourceTree = "<group>";
 		};
+		69FF38EB136A4FEA00DD8500 /* ExampleMessage */ = {
+			isa = PBXGroup;
+			children = (
+				69FF38ED136A501000DD8500 /* ReversibleString.h */,
+				69FF38EE136A501000DD8500 /* ReversibleString.m */,
+				69FF38F0136A566600DD8500 /* TestReversibleString.h */,
+				69FF38F1136A566600DD8500 /* TestReversibleString.m */,
+			);
+			name = ExampleMessage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +325,8 @@
 				69852A0413644AF00099C329 /* ExampleBean.m in Sources */,
 				69852A0713644B9E0099C329 /* TestExamProp.m in Sources */,
 				69852A0B1364559B0099C329 /* Testblock1.m in Sources */,
+				69FF38EF136A501000DD8500 /* ReversibleString.m in Sources */,
+				69FF38F2136A566600DD8500 /* TestReversibleString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
