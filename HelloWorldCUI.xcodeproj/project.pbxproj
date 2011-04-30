@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		6928F9071354BECC00C79007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6928F9061354BECC00C79007 /* Foundation.framework */; };
 		6928F9151354BF0A00C79007 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 6928F9141354BF0A00C79007 /* HelloWorld.m */; };
+		6972954C136BFE0300A6B309 /* MyViewerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6972954B136BFE0300A6B309 /* MyViewerCtrl.m */; };
+		6972954F136C00B000A6B309 /* WinCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6972954E136C00B000A6B309 /* WinCtrl.m */; };
+		69729552136C00BE00A6B309 /* MyInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 69729551136C00BE00A6B309 /* MyInspector.m */; };
 		69850AC21359CD550081042B /* ExampleNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AC11359CD550081042B /* ExampleNSString.m */; };
 		69850ACF135A3F8C0081042B /* ExampleLocalCategory+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850ACE135A3F8C0081042B /* ExampleLocalCategory+Local.m */; };
 		69850ADA135B52CD0081042B /* NSString+PathComp.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AD9135B52CD0081042B /* NSString+PathComp.m */; };
@@ -50,6 +53,12 @@
 		6928F90C1354BECC00C79007 /* HelloWorldCUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorldCUI-Prefix.pch"; sourceTree = "<group>"; };
 		6928F9131354BF0A00C79007 /* HelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
 		6928F9141354BF0A00C79007 /* HelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
+		6972954A136BFE0300A6B309 /* MyViewerCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewerCtrl.h; sourceTree = "<group>"; };
+		6972954B136BFE0300A6B309 /* MyViewerCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewerCtrl.m; sourceTree = "<group>"; };
+		6972954D136C00B000A6B309 /* WinCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinCtrl.h; sourceTree = "<group>"; };
+		6972954E136C00B000A6B309 /* WinCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinCtrl.m; sourceTree = "<group>"; };
+		69729550136C00BE00A6B309 /* MyInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInspector.h; sourceTree = "<group>"; };
+		69729551136C00BE00A6B309 /* MyInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInspector.m; sourceTree = "<group>"; };
 		69850AC01359CD550081042B /* ExampleNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleNSString.h; sourceTree = "<group>"; };
 		69850AC11359CD550081042B /* ExampleNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleNSString.m; sourceTree = "<group>"; };
 		69850ACD135A3F8C0081042B /* ExampleLocalCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleLocalCategory.h; sourceTree = "<group>"; };
@@ -134,6 +143,7 @@
 		6928F9081354BECC00C79007 /* HelloWorldCUI */ = {
 			isa = PBXGroup;
 			children = (
+				69729549136BFDC500A6B309 /* ExampleImageViewer */,
 				69FF38EB136A4FEA00DD8500 /* ExampleMessage */,
 				69852A081364557D0099C329 /* ExampleBlock */,
 				69852A0113644A520099C329 /* ExampleProperty */,
@@ -155,6 +165,19 @@
 				6928F90C1354BECC00C79007 /* HelloWorldCUI-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69729549136BFDC500A6B309 /* ExampleImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				6972954A136BFE0300A6B309 /* MyViewerCtrl.h */,
+				6972954B136BFE0300A6B309 /* MyViewerCtrl.m */,
+				6972954D136C00B000A6B309 /* WinCtrl.h */,
+				6972954E136C00B000A6B309 /* WinCtrl.m */,
+				69729550136C00BE00A6B309 /* MyInspector.h */,
+				69729551136C00BE00A6B309 /* MyInspector.m */,
+			);
+			name = ExampleImageViewer;
 			sourceTree = "<group>";
 		};
 		69850ABF1359CD1E0081042B /* ExampleFoundation */ = {
@@ -327,6 +350,9 @@
 				69852A0B1364559B0099C329 /* Testblock1.m in Sources */,
 				69FF38EF136A501000DD8500 /* ReversibleString.m in Sources */,
 				69FF38F2136A566600DD8500 /* TestReversibleString.m in Sources */,
+				6972954C136BFE0300A6B309 /* MyViewerCtrl.m in Sources */,
+				6972954F136C00B000A6B309 /* WinCtrl.m in Sources */,
+				69729552136C00BE00A6B309 /* MyInspector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
