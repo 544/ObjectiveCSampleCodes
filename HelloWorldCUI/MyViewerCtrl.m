@@ -58,5 +58,5 @@ static NSString *AutoResizeKey = @"AutoResize";
     [[NSUserDefaults standardUserDefaults] setBool:newState forKey:AutoResizeKey];
 }
 
--(void) applicationWillFinishL
+//-(void) applicationWillFinishL
 @end

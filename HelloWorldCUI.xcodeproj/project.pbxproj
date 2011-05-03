@@ -12,6 +12,10 @@
 		6972954C136BFE0300A6B309 /* MyViewerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6972954B136BFE0300A6B309 /* MyViewerCtrl.m */; };
 		6972954F136C00B000A6B309 /* WinCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6972954E136C00B000A6B309 /* WinCtrl.m */; };
 		69729552136C00BE00A6B309 /* MyInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 69729551136C00BE00A6B309 /* MyInspector.m */; };
+		697295A0137050A000A6B309 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6972959F137050A000A6B309 /* Cocoa.framework */; };
+		697295A5137050AA00A6B309 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697295A2137050AA00A6B309 /* AppKit.framework */; };
+		697295A6137050AA00A6B309 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697295A3137050AA00A6B309 /* CoreData.framework */; };
+		697295A7137050AA00A6B309 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697295A4137050AA00A6B309 /* Foundation.framework */; };
 		69850AC21359CD550081042B /* ExampleNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AC11359CD550081042B /* ExampleNSString.m */; };
 		69850ACF135A3F8C0081042B /* ExampleLocalCategory+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850ACE135A3F8C0081042B /* ExampleLocalCategory+Local.m */; };
 		69850ADA135B52CD0081042B /* NSString+PathComp.m in Sources */ = {isa = PBXBuildFile; fileRef = 69850AD9135B52CD0081042B /* NSString+PathComp.m */; };
@@ -59,6 +63,10 @@
 		6972954E136C00B000A6B309 /* WinCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinCtrl.m; sourceTree = "<group>"; };
 		69729550136C00BE00A6B309 /* MyInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInspector.h; sourceTree = "<group>"; };
 		69729551136C00BE00A6B309 /* MyInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInspector.m; sourceTree = "<group>"; };
+		6972959F137050A000A6B309 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		697295A2137050AA00A6B309 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		697295A3137050AA00A6B309 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		697295A4137050AA00A6B309 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69850AC01359CD550081042B /* ExampleNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleNSString.h; sourceTree = "<group>"; };
 		69850AC11359CD550081042B /* ExampleNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleNSString.m; sourceTree = "<group>"; };
 		69850ACD135A3F8C0081042B /* ExampleLocalCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleLocalCategory.h; sourceTree = "<group>"; };
@@ -109,6 +117,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6928F9071354BECC00C79007 /* Foundation.framework in Frameworks */,
+				697295A0137050A000A6B309 /* Cocoa.framework in Frameworks */,
+				697295A5137050AA00A6B309 /* AppKit.framework in Frameworks */,
+				697295A6137050AA00A6B309 /* CoreData.framework in Frameworks */,
+				697295A7137050AA00A6B309 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +147,8 @@
 		6928F9051354BECC00C79007 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				697295A1137050AA00A6B309 /* Other Frameworks */,
+				6972959F137050A000A6B309 /* Cocoa.framework */,
 				6928F9061354BECC00C79007 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -178,6 +192,17 @@
 				69729551136C00BE00A6B309 /* MyInspector.m */,
 			);
 			name = ExampleImageViewer;
+			sourceTree = "<group>";
+		};
+		697295A1137050AA00A6B309 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				697295A2137050AA00A6B309 /* AppKit.framework */,
+				697295A3137050AA00A6B309 /* CoreData.framework */,
+				697295A4137050AA00A6B309 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			path = Test;
 			sourceTree = "<group>";
 		};
 		69850ABF1359CD1E0081042B /* ExampleFoundation */ = {

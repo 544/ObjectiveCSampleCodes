@@ -8,8 +8,8 @@
 
 #import "WinCtrl.h"
 
-#define ImageSizeMIN 32; //最小サイズ
-#define TitleBarHeight 22; //バーの幅
+#define ImageSizeMIN 32 //最小サイズ
+#define TitleBarHeight 22 //バーの幅
 
 /* extern */
 NSString *ShrinkAllNotification = @"ShrinkAllNotification";
@@ -96,7 +96,7 @@ static NSSize screenSize = {1024.0, 760.0};
     if (autoResize) {
         double wr, hr, ratio;
         wr = screenSize.width/ originalSize.width;
-        hr = (screenSize.height - TitleBarHeight) / originalSize.height;
+//TODO        hr = (screenSize.height - TitleBarHeight) / originalSize.height;
         ratio = (wr < hr) ? wr : hr;
         if (ratio < 1.0)
             mag;
@@ -106,7 +106,7 @@ static NSSize screenSize = {1024.0, 760.0};
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shrinkAll:) name:ShrinkAllNotification object:nil];
     [window setDelegate:self];
     [window setTitleWithRepresentedFilename:filename];
-    [window makeKeyAndOrderFront::self];
+    [window makeKeyAndOrderFront:self];
     [window setDocumentEdited:(mag <1.0)];
     return self;
 }
@@ -146,13 +146,13 @@ static NSSize screenSize = {1024.0, 760.0};
     static NSString *shrinkName = nil;
     
     if (shrinkName == nil)
-        shirinkName = NSLocalizedString(@"Shrink", "");
+        shrinkName = NSLocalizedString(@"Shrink", "");
     // アンドゥマネージャに現在の縮小率にする操作を登録
     [[undoManager prepareWithInvocationTarget:self] setScaleFactor:mag];
     [undoManager setActionName:shrinkName];
     
     mag = factor;
-    sz.size = (int) (originalSize.width * mag);
+//    sz.size = (int) (originalSize.width * mag);
     sz.height =(int) (originalSize.height * mag);
     [view setFrameSize:sz];
     
@@ -161,13 +161,57 @@ static NSSize screenSize = {1024.0, 760.0};
     rect.origin.x += (int)(prev.width - rect.size.width) / 2;
     rect.origin.y += (int)(prev.height - rect.size.height) /2;
     
-    [windows setFrame:rect display:YES];
+//    [windows setFrame:rect display:YES];
     [window setDocumentEdited:(mag < 1.0)];
     [[NSNotificationCenter defaultCenter] postNotificationName:SizeDidChangeNotification object:window];
 }
 
 -(void)shrink:(id)sender{
+    NSSize sz = [[window contentView] frame].size;
+    if ( sz.width < ImageSizeMIN || sz.height < ImageSizeMIN )
+        return;
     
+    [self setScaleFactor:(mag * 0.5)];
+}
+
+-(void) alertDidEnd:(NSAlert*) alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
+    if (returnCode == NSAlertDefaultReturn) {
+        [window setDelegate:nil];
+        [window close];
+        [self release];
+    }
+}
+
+- (BOOL) windowShouldClose:(id)sender {
+    static NSString *warnstr, *closestr, *okstr, *cancelstr;
+    NSAlert *alert;
+    
+    if (![window isDocumentEdited])
+        return YES;
+    
+    if (warnstr == nil) {
+        warnstr = NSLocalizedString(@"File %@ is edited", "Edited");
+        [warnstr retain];
+        closestr = NSLocalizedString(@"Close the Window?", "Close?");
+        [closestr retain];
+        
+        okstr = [NSLocalizedString(@"OK", "OK") retain];
+        cancelstr = [NSLocalizedString(@"Cancel", "Cancel") retain];
+    }
+
+    alert = [NSAlert alertWithMessageText:closestr defaultButton:okstr alternateButton:cancelstr otherButton:nil informativeTextWithFormat:warnstr, [filename lastPathComponent]];
+    
+    [alert beginSheetModalForWindow:window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:contextinfo:) contextInfo:nil];
+    return NO;
+}
+
+- (void) windowWillClose:(NSNotification *)notification {
+    [window setDelegate:nil];
+    [self release];
+}
+
+- (NSUndoManager*) windowWillReturnUndoManager:(NSWindow *)window {
+    return undoManager;
 }
 
 @end

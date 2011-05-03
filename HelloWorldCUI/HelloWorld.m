@@ -18,6 +18,7 @@
 #import "TestExamProp.h"
 #import "Testblock1.h"
 #import "TestReversibleString.h"
+#import <Cocoa/Cocoa.h>
 
 @implementation HelloWorld
 

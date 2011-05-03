@@ -17,6 +17,6 @@
 @synthesize propString2;
 
 //名前を変えることもできる。ただし、このファイル内のみで有効。
-@synthesize propString3 = name;
+//@synthesize propString3 = name;
 
 @end
