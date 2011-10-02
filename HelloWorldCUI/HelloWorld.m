@@ -53,9 +53,9 @@ int main(int argc, char **argv){
     
 //    [[[TestExamProp alloc] init] doit];
     
-//    [[[Testblock1 alloc] init] doIt];
+    [[[Testblock1 alloc] init] doIt];
     
-    [[[TestReversibleString alloc] init] doit];
+//    [[[TestReversibleString alloc] init] doit];
     
     [pool drain];
     return 0;

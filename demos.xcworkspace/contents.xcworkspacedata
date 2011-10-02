@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:objectiveC/category/category.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:objectiveC/abstract/abstract.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:objectiveC/protocol/protocol.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:objectiveC/message/message.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:objectiveC/block/block.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:objectiveC/propertyDemo/propertyDemo.xcodeproj">
+   </FileRef>
+</Workspace>

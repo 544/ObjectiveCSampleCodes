@@ -6,11 +6,20 @@
 //  Copyright 2011 Private. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 
-
-@interface MyInspector : NSObject {
+@interface MyInspector : NSObject <NSWindowDelegate>{
     
+    NSPanel *panel;
+    NSTextField *text;
+    BOOL isClosed;
 }
+
++(id)sharedInstance;
+-(id)init;
+-(void)activate;
+-(void)showMain:(NSNotification*) aNotification;
+-(void)windowClosed:(NSNotification*) aNotification;
+-(void)shrinkAll:(id)sender;
 
 @end

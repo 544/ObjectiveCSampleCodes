@@ -19,7 +19,7 @@
     [bean setPropInt:1];
     [bean setPropString:@"hoge"];
     [bean setPropString2:@"piyo"];
-    [bean setPropString3:@"fuga"]; //実装部ではnameという名前に変えたが、外部では無効
+//    [bean setPropString3:@"fuga"]; //実装部ではnameという名前に変えたが、外部では無効
     
     
     // Beanから出してみる。
@@ -27,7 +27,7 @@
     NSLog(@"... %@",[bean propString]);
     NSLog(@"... %@",[bean getStr2]); //アクセサの名称を変更。
     
-    NSLog(@"... %@",bean.propString3); //ドット演算子でもとれる。
+//    NSLog(@"... %@",bean.propString3); //ドット演算子でもとれる。
     
     
     [pool drain];
