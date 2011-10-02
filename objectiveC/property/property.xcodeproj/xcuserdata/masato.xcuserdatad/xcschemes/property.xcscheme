@@ -13,10 +13,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "695BD75F143877AC0034112B"
-               BuildableName = "propertyDemo"
-               BlueprintName = "propertyDemo"
-               ReferencedContainer = "container:propertyDemo.xcodeproj">
+               BlueprintIdentifier = "69BA968714389904002246C8"
+               BuildableName = "property"
+               BlueprintName = "property"
+               ReferencedContainer = "container:property.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -38,10 +38,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "695BD75F143877AC0034112B"
-            BuildableName = "propertyDemo"
-            BlueprintName = "propertyDemo"
-            ReferencedContainer = "container:propertyDemo.xcodeproj">
+            BlueprintIdentifier = "69BA968714389904002246C8"
+            BuildableName = "property"
+            BlueprintName = "property"
+            ReferencedContainer = "container:property.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "695BD75F143877AC0034112B"
-            BuildableName = "propertyDemo"
-            BlueprintName = "propertyDemo"
-            ReferencedContainer = "container:propertyDemo.xcodeproj">
+            BlueprintIdentifier = "69BA968714389904002246C8"
+            BuildableName = "property"
+            BlueprintName = "property"
+            ReferencedContainer = "container:property.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
