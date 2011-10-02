@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TestExamProp.h"
+#import "Client.h"
 
 int main (int argc, const char * argv[])
 {
@@ -16,7 +16,7 @@ int main (int argc, const char * argv[])
 
     // insert code here...
     NSLog(@"property demo");
-    [[TestExamProp alloc] doit];
+    [[Client alloc] doit];
     
 
     [pool drain];

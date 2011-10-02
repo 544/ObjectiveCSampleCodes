@@ -12,21 +12,31 @@
 @implementation ExampleBean
 
 // synthesizeで勝手にアクセサができる.
-@synthesize str_retain;
-@synthesize int_assign;
+@synthesize _str_retain;
+@synthesize _int_assign;
 
 // 明示的にアクセッサを宣言
 - (NSString*)getStr
 {
-    return [NSString stringWithFormat:@"[get:%@]",str_withAccesser];
+    return [NSString stringWithFormat:@"[get:%@]",_str_withAccesser];
 }
 - (void)setStr:(NSString*)val
 {
-    [str_withAccesser release]; //明示的に解放
-    str_withAccesser = [NSString stringWithFormat:@"<set:%@>",val];
+    [_str_withAccesser release]; //明示的に解放
+    _str_withAccesser = [NSString stringWithFormat:@"<set:%@>",val];
 }
+
+@synthesize _str_nonatomic;
+
+@synthesize _mutableStr_retain;
+@synthesize _mutableStr_copy;
 
 //名前を変えることもできる。ただし、このファイル内のみで有効。
 //@synthesize propString3 = name;
 
+- (void)deco:(NSMutableString*)val
+{
+    val = [NSMutableString stringWithFormat:@"<%@>",val];
+    NSLog(val);
+}
 @end
