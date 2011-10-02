@@ -27,15 +27,7 @@
     [bean setStr:@"piyo"];
     NSLog(@"str_withAccesser...%@",[bean getStr]);
     
-//    [bean setPropString2:@"piyo"];
-    //  [bean setPropString3:@"fuga"]; //実装部ではnameという名前に変えたが、外部では無効
-    
-    
-    // Beanから出してみる。
-//    NSLog(@"... %@",[bean getStr2]); //アクセサの名称を変更。
-    
-    //    NSLog(@"... %@",bean.propString3); //ドット演算子でもとれる。
-    
+
     
     [pool drain];
 }

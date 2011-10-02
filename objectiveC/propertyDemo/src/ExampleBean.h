@@ -14,9 +14,6 @@
     int int_assign;
 
     NSString *str_withAccesser;
-//    NSString *propStringReadOnly;
-//    NSString *propString2;
-//    NSString *propString3;
 }
 
 // reatain ... リファレンスカウンタでの管理
@@ -24,11 +21,7 @@
 // retain だとリファレンスカウンタを加算。copyだとオブジェクトをコピー
 @property(assign) int int_assign;//assign: 値を代入。intはオブジェクトではないのでretain,copyは不可
 
+// アクセッサを明示的に設定
 @property(retain, getter = getStr, setter = setStr:) NSString *str_withAccesser;
-
-//@property(getter = getStr2) NSString *propString2;
-//@property NSString *propString3;
-
-//@property(readonly) NSString *propStringReadOnly;
 
 @end
