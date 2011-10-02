@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6935D0F014389966009DA63F /* ExampleBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 6935D0ED14389966009DA63F /* ExampleBean.m */; };
-		6935D0F114389966009DA63F /* TestExamProp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6935D0EF14389966009DA63F /* TestExamProp.m */; };
+		6935D0F114389966009DA63F /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 6935D0EF14389966009DA63F /* Client.m */; };
 		69BA968D14389904002246C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BA968C14389904002246C8 /* Foundation.framework */; };
 		69BA969014389904002246C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BA968F14389904002246C8 /* main.m */; };
 		69BA969414389904002246C8 /* property.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 69BA969314389904002246C8 /* property.1 */; };
@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		6935D0EC14389966009DA63F /* ExampleBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleBean.h; sourceTree = "<group>"; };
 		6935D0ED14389966009DA63F /* ExampleBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleBean.m; sourceTree = "<group>"; };
-		6935D0EE14389966009DA63F /* TestExamProp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestExamProp.h; sourceTree = "<group>"; };
-		6935D0EF14389966009DA63F /* TestExamProp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestExamProp.m; sourceTree = "<group>"; };
+		6935D0EE14389966009DA63F /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		6935D0EF14389966009DA63F /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
 		69BA968814389904002246C8 /* property */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = property; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BA968C14389904002246C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69BA968F14389904002246C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,8 +56,8 @@
 			children = (
 				6935D0EC14389966009DA63F /* ExampleBean.h */,
 				6935D0ED14389966009DA63F /* ExampleBean.m */,
-				6935D0EE14389966009DA63F /* TestExamProp.h */,
-				6935D0EF14389966009DA63F /* TestExamProp.m */,
+				6935D0EE14389966009DA63F /* Client.h */,
+				6935D0EF14389966009DA63F /* Client.m */,
 				69BA968E14389904002246C8 /* property */,
 				69BA968B14389904002246C8 /* Frameworks */,
 				69BA968914389904002246C8 /* Products */,
@@ -150,7 +150,7 @@
 			files = (
 				69BA969014389904002246C8 /* main.m in Sources */,
 				6935D0F014389966009DA63F /* ExampleBean.m in Sources */,
-				6935D0F114389966009DA63F /* TestExamProp.m in Sources */,
+				6935D0F114389966009DA63F /* Client.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
