@@ -34,9 +34,5 @@
 //名前を変えることもできる。ただし、このファイル内のみで有効。
 //@synthesize propString3 = name;
 
-- (void)deco:(NSMutableString*)val
-{
-    val = [NSMutableString stringWithFormat:@"<%@>",val];
-    NSLog(val);
-}
+
 @end

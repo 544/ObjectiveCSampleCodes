@@ -36,5 +36,5 @@
 @property(retain) NSMutableString *_mutableStr_retain;
 @property(copy) NSMutableString *_mutableStr_copy;
 
-- (void)deco:(NSMutableString*)val;
+
 @end

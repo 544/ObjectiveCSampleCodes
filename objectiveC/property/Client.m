@@ -27,24 +27,6 @@
     [bean setStr:@"piyo"];
     NSLog(@"str_withAccesser...%@",[bean getStr]);
     
-    // retainとcopy
-    NSMutableString *str_retain = [NSMutableString stringWithString:@"retain value"];
-    NSMutableString *str_copy = [NSMutableString stringWithString:@"copy value"];
-    
-    [bean set_mutableStr_retain:str_retain];
-    [bean set_mutableStr_copy:str_copy];
-    
-//    str_retain = [NSMutableString stringWithString:@"xxx"];
-//    str_copy = [NSMutableString stringWithString:@"xxx"];
-
-    [bean deco:str_retain];
-    [bean deco:str_copy];
-    
-    NSLog(@"mutableString retain...%@",str_retain);
-    NSLog(@"mutableString copy...%@",str_copy);
-
-    
-    
     [pool drain];
 }
 
